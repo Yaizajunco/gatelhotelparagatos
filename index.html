@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatel - Hotel para Gatos</title>
+    <link rel="icon" href="../img/icono.png" type="image/x-icon">
+</head>
+<style>
+    body {
+        font-family:"Poppins", "Poppins Medium", "Poppins SemiBold", "Poppins Thin";
+        margin: 0;
+        padding: 0;
+        background-color: #e8f5e9;
+        color: #6CB758;
+    }
+    header {
+        background-color: #388e3c;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+	
+.logo-gatel {
+    width: 600px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .logo-gatel {
+        width: 800px;
+    }
+}
+	
+    .top-bar {
+        background-color: #6cb758;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 2rem;
+        align-items: center;
+    }
+    .top-bar a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        height: 50px;
+        margin-right: 10px;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        padding: 0.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+        color: #5d4e3f;
+        text-decoration: none;
+        margin: 0 1rem;
+        padding: 0.5rem;
+        font-weight: bold;
+    }
+    nav a:hover {
+        color: #66bb6a;
+    }
+    .hero {
+        background-image: url('https://source.unsplash.com/1600x900/?cat');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: white;
+        padding: 5rem 2rem;
+    }
+    .hero h1 {
+        font-size: 5rem;
+        color: #6cb758;
+    }
+    .hero p {
+        font-size: 1.5rem;
+        color: #6cb758;
+        max-width: 600px;
+        margin: auto;
+    }
+    .container {
+        text-align: center;
+        padding: 2rem;
+    }
+    .section {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+        padding: 2rem;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    footer {
+        background-color: #6cb758;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+</style>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <img src="../Captura de pantalla 2025-03-28 181947.png" alt="Gatel Logo">
+            <span>Hotel para Gatos</span>
+        </div>
+        <div>
+            <a href="mailto:contacto@gatel.com">contacto@gatel.com</a>
+            <a>+34645325678</a> 
+        </div>
+    </div>
+    <nav>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#camaras">Cámaras en Vivo</a>
+        <a href="#reserva" style="color: white; background-color: #6cb758; padding: 0.5rem 1rem; border-radius: 5px;">Reservar</a>
+    </nav>
+    <div class="hero">
+      
+		<img src="imagotipogatel.png" class="logo-responsive" alt="Gatel logo" />
+        <p>Hotel exclusivo para gatos, con un ambiente seguro y cómodo.</p>
+    </div>
+    <div class="container">
+        <section id="sobre-nosotros" class="section">
+            <h2>Sobre Nosotros</h2>
+            <p>En Gatel nos especializamos en brindar la mejor experiencia para tu gato mientras estás fuera. Nuestras instalaciones han sido diseñadas para ofrecer un ambiente cómodo, seguro y lleno de entretenimiento para los felinos.</p>
+        </section>
+        <section id="servicios" class="section">
+            <h2>Nuestros Servicios</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                <div style="background: #f1f8e9; padding: 1rem; border-radius: 10px; width: 200px; text-align: center;">
+                    <p>Habitaciones privadas</p>
+                </div>
+                <div style="background: #f1f8e9; padding: 1rem; border-radius: 10px; width: 200px; text-align: center;">
+                    <p>Alimentación personalizada</p>
+                </div>
+                <div style="background: #f1f8e9; padding: 1rem; border-radius: 10px; width: 200px; text-align: center;">
+                    <p>Juegos y entretenimiento</p>
+                </div>
+                <div style="background: #f1f8e9; padding: 1rem; border-radius: 10px; width: 200px; text-align: center;">
+                    <p>Supervisión veterinaria</p>
+                </div>
+                <div style="background: #f1f8e9; padding: 1rem; border-radius: 10px; width: 200px; text-align: center;">
+                    <p>Cámaras en vivo</p>
+                </div>  
+            </div>
+        </section>
+        <section id="galeria" class="section">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <img src="../gatos.png" width="200" height="200" alt="Gato descansando en habitación del hotel"/>
+				 <img src="../gatos.png" width="200" height="200" alt="Gato descansando en habitación del hotel"/>
+				 <img src="../gatos.png" width="200" height="200" alt="Gato descansando en habitación del hotel"/>
+				
+				 <img src="../gatos.png" width="200" height="200" alt="Gato descansando en habitación del hotel"/>
+				 <img src="../gatos.png" width="200" height="200" alt="Gato descansando en habitación del hotel"/>
+				 <img src="../gatos.png" width="200" height="200" alt="Gato descansando en habitación del hotel"/>
+				
+			      										 
+			
+            </div>
+        </section>
+        <section id="camaras" class="section">
+            <h2>Cámaras en Vivo</h2>
+  <p>En nuestra app **Gatel Gijón**, puedes acceder a las cámaras en vivo para ver cómo está tu gato en todo momento, asegurándote de que esté feliz y seguro.</p>
+</section>
+		
+        <section id="reserva" class="section">
+            <h2>Reserva una Estancia</h2>
+            <p>Completa el siguiente formulario para reservar una estancia para tu gato en Gatel.</p>
+            <form action="mailto:reservas@gatel.com" method="post" enctype="text/plain" style="text-align: left; max-width: 500px; margin: auto;">
+                <label for="nombre">Nombre del dueño:</label><br>
+                <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 0.5rem;"><br><br>
+                <label for="gato">Nombre del gato:</label><br>
+                <input type="text" id="gato" name="gato" required style="width: 100%; padding: 0.5rem;"><br><br>
+                <label for="fecha">Fecha de entrada:</label><br>
+                <input type="date" id="fecha" name="fecha" required style="width: 100%; padding: 0.5rem;"><br><br>
+                <label for="dias">Número de días:</label><br>
+                <input type="number" id="dias" name="dias" min="1" required style="width: 100%; padding: 0.5rem;"><br><br>
+                <label for="email">Correo de contacto:</label><br>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem;"><br><br>
+                <label for="comentarios">Comentarios adicionales:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" style="width: 100%; padding: 0.5rem;"></textarea><br><br>
+                <button type="submit" style="background-color: #6cb758; color: white; padding: 0.7rem 1.5rem; border: none; border-radius: 5px; font-weight: bold;">Reservar</button>
+            </form>
+        </section>
+    </div>
+	
+	
+	
+	
+	
+	<section id="ubicacion" class="section">
+  <h2>¿Dónde estamos?</h2>
+  <p>Nos encontramos en la Calle Guipúzcoa, 54. Muy cerca del Parque del Llano y con fácil acceso desde la Av. de Gaspar García Laviana.</p>
+  <div style="width: 100%; height: 400px; border-radius: 10px; overflow: hidden; margin-top: 1rem;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.177540658786!2d-5.6704886!3d43.5246263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd367db6eec4270b:0x5b67781b5c3a51be!2sC.%20Guip%C3%BAzcoa%2C%2054%2C%20Gij%C3%B3n-Sur%2C%2033210%20Gij%C3%B3n%2C%20Asturias!5e0!3m2!1ses!2ses!4v1715363831947!5m2!1ses!2ses" 
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+	
+    <footer>
+        <p>&copy; 2025 Gatel - Hotel para Gatos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
